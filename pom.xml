@@ -22,11 +22,8 @@
 		<!-- dependency versions -->
 		<commons.collections.version>3.2.1</commons.collections.version>
 		<datahub.version>6.1.0.0-RC3</datahub.version>
-        <guava.version>17.0</guava.version>
-        <jackson.version>1.9.2</jackson.version>
-		<jersey.version>1.19</jersey.version>
         <slf4j.version>1.7.5</slf4j.version>
-        <spring.version>3.2.8.RELEASE</spring.version>
+        <spring.version>4.1.5.RELEASE</spring.version>
         <spring.messaging>4.1.2.RELEASE</spring.messaging>
 	</properties>
 
@@ -65,33 +62,11 @@
 			</dependency>
 
             <!-- commons / utils deps -->
-			<dependency>
-				<groupId>com.google.guava</groupId>
-				<artifactId>guava</artifactId>
-				<version>${guava.version}</version>
-				<scope>provided</scope>
-			</dependency>
             <dependency>
                 <groupId>commons-collections</groupId>
                 <artifactId>commons-collections</artifactId>
                 <version>${commons.collections.version}</version>
 				<scope>provided</scope>
-            </dependency>
-
-            <!-- Jersey deps -->
-			<dependency>
-				<groupId>com.sun.jersey</groupId>
-				<artifactId>jersey-bundle</artifactId>
-				<version>${jersey.version}</version>
-				<scope>provided</scope>
-			</dependency>
-
-            <!-- Jackson deps -->
-            <dependency>
-                <groupId>org.codehaus.jackson</groupId>
-                <artifactId>jackson-core-asl</artifactId>
-                <version>${jackson.version}</version>
-                <scope>provided</scope>
             </dependency>
 
             <!-- logging deps -->
@@ -128,10 +103,6 @@
 		<dependency>
 			<groupId>com.hybris.datahub</groupId>
 			<artifactId>datahub-extension-sdk</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
 		</dependency>
 	</dependencies>
 
