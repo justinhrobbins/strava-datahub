@@ -14,18 +14,14 @@
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--<bean name="compositionCompletedEventListener" class="org.boulder.strava.riders.event.CompositionCompletedEventListener"-->
-          <!--parent="abstractPoolActionInitiationEventListener">-->
-        <!--<property name="eventPublicationService" ref="eventPublicationService" />-->
-    <!--</bean>-->
+    <bean name="compositionCompletedEventListener" class="org.boulder.strava.riders.event.CompositionCompletedEventListener"
+          parent="abstractPoolActionInitiationEventListener">
+        <property name="eventPublicationService" ref="eventPublicationService" />
+    </bean>
 
-    <!--<bean name="dataLoadedEventListener" class="org.boulder.strava.riders.event.DataLoadedEventListener"-->
-          <!--parent="abstractPoolActionInitiationEventListener">-->
-        <!--<property name="eventPublicationService" ref="eventPublicationService" />-->
-    <!--</bean>-->
-
-    <!--<bean name="feedCreationListener" class="org.boulder.strava.riders.event.FeedCreationListener">-->
-        <!--<property name="feedService" ref="dataHubFeedService" />-->
-    <!--</bean>-->
+    <bean name="dataLoadedEventListener" class="org.boulder.strava.riders.event.DataLoadedEventListener"
+          parent="abstractPoolActionInitiationEventListener">
+        <property name="eventPublicationService" ref="eventPublicationService" />
+    </bean>
 
 </beans>

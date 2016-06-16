@@ -15,8 +15,13 @@ import com.hybris.datahub.adapter.AdapterService;
 import com.hybris.datahub.api.publication.PublicationException;
 import com.hybris.datahub.runtime.domain.TargetSystemPublication;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class StravaTargetSystemAdapter implements AdapterService
 {
+	private static final Logger logger = LoggerFactory.getLogger(StravaTargetSystemAdapter.class);
+
 	@Override
 	public String getTargetSystemType()
 	{
@@ -26,6 +31,6 @@ public class StravaTargetSystemAdapter implements AdapterService
 	@Override
 	public void publish(final TargetSystemPublication targetSystemPublication, final String s) throws PublicationException
 	{
-
+		logger.info("Publishing!");
 	}
 }
