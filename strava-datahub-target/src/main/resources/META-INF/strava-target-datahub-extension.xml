@@ -1,0 +1,50 @@
+<!--
+  ~ [y] hybris Platform
+  ~
+  ~ Copyright (c) 2000-2014 hybris AG
+  ~ All rights reserved.
+  ~
+  ~ This software is the confidential and proprietary information of hybris
+  ~ ("Confidential Information"). You shall not disclose such Confidential
+  ~ Information and shall use it only in accordance with the terms of the
+  ~ license agreement you entered into with hybris.
+  -->
+<extension xmlns="http://www.hybris.com/schema/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		   xsi:schemaLocation="http://www.hybris.com/schema/ datahub-metadata-schema-1.1.0.xsd" name="strava-datahub-target">
+	<dependencies>
+		<dependency>
+			<extension>strava-datahub-canonical</extension>
+		</dependency>
+	</dependencies>
+	<targetSystems>
+		<targetSystem>
+			<name>StravaTargetSystem</name>
+			<type>StravaTargetSystemAdapter</type>
+			<exportURL />
+			<userName />
+			<password />
+			<exportCodes />
+			<targetItems>
+				<item>
+					<type>StravaTargetItem</type>
+					<canonicalItemSource>StravaCanonicalItem</canonicalItemSource>
+					<status>ACTIVE</status>
+					<attributes>
+						<attribute>
+							<name>name</name>
+							<localizable>false</localizable>
+							<collection>false</collection>
+							<transformationExpression>name</transformationExpression>
+						</attribute>
+						<attribute>
+							<name>calories</name>
+							<localizable>false</localizable>
+							<collection>false</collection>
+							<transformationExpression>calories</transformationExpression>
+						</attribute>
+					</attributes>
+				</item>
+			</targetItems>
+		</targetSystem>
+	</targetSystems>
+</extension>
